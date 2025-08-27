@@ -1,0 +1,36 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+function IsPrime(const aNumero: integer): Boolean;
+begin
+  if aNumero <= 1 then result := False;
+
+
+end;
+
+
+var
+  numero: Integer;
+begin
+  try
+    Writeln('Digite um numero para verificar se é primo:');
+
+
+    try
+      Readln(numero);
+    except
+      WriteLn('Digite apenas números');
+    end;
+
+
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+  end;
+end.
