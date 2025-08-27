@@ -30,24 +30,24 @@ end;
 
 
 var
-  numero: Integer;
+  numeros: Integer;
 begin
   try
 
-    Writeln('Digite um numero para verificar se é primo:');
+    Writeln('Digite um numeros para verificar se ï¿½ primo:');
     try
-      Readln(numero);
+      Readln(numeros);
     except
-      WriteLn('Digite apenas números');
+      WriteLn('Digite apenas nï¿½meros');
       Exit;
     end;
 
-    if isPrime(numero) then begin
-      WriteLn('O número ' +numero.ToString +' é primo!');
+    if isPrime(numeros) then begin
+      WriteLn('O nï¿½mero ' +numeros.ToString +' ï¿½ primo!');
     end else begin
-      WriteLn('O número ' +numero.ToString +' NÃO é primo!');
+      WriteLn('O nï¿½mero ' +numeros.ToString +' Nï¿½O ï¿½ primo!');
     end;
-  Readln(numero);
+  Readln(numeros);
 
 
   except
